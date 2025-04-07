@@ -19,3 +19,9 @@ document.addEventListener("keydown", function(e) {
  directionEl.innerText = `The Key you pressed is ${e.code}`;
 
 });
+
+let getButton = document.getElementById('clickMe');
+
+getButton.addEventListener('click', function() {
+    getButton.innerText = 'You clicked me!';
+})
