@@ -25,3 +25,15 @@ let getButton = document.getElementById('clickMe');
 getButton.addEventListener('click', function() {
     getButton.innerText = 'You clicked me!';
 })
+
+let colorButton = document.getElementById('randomColorBtn');
+function getRandomColor() {
+    const red = Math.floor(Math.random() * 256);
+    const green= Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    const randomColor = `rgb(${red}, ${green}, ${blue})`
+
+    document.body.style.backgroundColor = randomColor;
+}
+
+colorButton.addEventListener('click', getRandomColor)
