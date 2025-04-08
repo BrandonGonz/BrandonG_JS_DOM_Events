@@ -47,7 +47,7 @@ function changeBtnStyle() {
    let modeButton = document.getElementById('modeToggleBtn');
 
 modeButton.addEventListener('click', function () {
-  document.body.classList.toggle('dark-mode'); // adds or removes the class
+  document.body.classList.toggle('dark-mode'); 
 
   if (document.body.classList.contains('dark-mode')) {
     modeButton.innerText = 'light mode';
